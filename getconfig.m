@@ -4,7 +4,7 @@ function [video_data_dir,video_dir,fullvideoname, videoname,vocabDir,featDir_FV,
     featDir_FV = '/mnt/remote/Hollywood2Data/fv/feats'; % Path where features will be saved
     descriptor_path = '/mnt/remote/Hollywood2Data/descriptor/'; % change paths here 
     
-    if /mntexist(fullfile(descriptor_path),'dir')
+    if ~exist(fullfile(descriptor_path),'dir')
             mkdir(fullfile(descriptor_path));
     end
 
