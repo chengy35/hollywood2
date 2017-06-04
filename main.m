@@ -1,13 +1,13 @@
-clear;
-clc;
-% TODO Add paths
-addpath('~/lib/vlfeat/toolbox');
-vl_setup();
-setenv('LD_LIBRARY_PATH','/usr/local/lib/'); 
-addpath('~/lib/liblinear/matlab');
-addpath('~/lib/libsvm/matlab');
-	[video_data_dir,video_dir,fullvideoname, videoname,vocabDir,featDir_FV,featDir_LLC,descriptor_path,actionName] = getconfig();
-	st = 1;
+	clear;
+	clc;
+	% TODO Add paths
+	addpath('~/lib/vlfeat/toolbox');
+	vl_setup();
+	setenv('LD_LIBRARY_PATH','/usr/local/lib/'); 
+	addpath('~/lib/liblinear/matlab');
+	addpath('~/lib/libsvm/matlab');
+	[video_data_dir,video_dir,fullvideoname, videoname,vocabDir,featDir_FV,featDir_LLC,descriptor_path,actionName] = getconfiglocal();
+	st = 692;
 	send = length(videoname);
 	fprintf('Start : %d \n',st);
 	fprintf('End : %d \n',send);
