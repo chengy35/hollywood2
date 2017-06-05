@@ -6,7 +6,8 @@
 	setenv('LD_LIBRARY_PATH','/usr/local/lib/'); 
 	addpath('~/lib/liblinear/matlab');
 	addpath('~/lib/libsvm/matlab');
-	[video_data_dir,video_dir,fullvideoname, videoname,vocabDir,featDir_FV,featDir_LLC,descriptor_path,actionName] = getconfiglocal();
+	%[video_data_dir,video_dir,fullvideoname, videoname,vocabDir,featDir_FV,featDir_LLC,descriptor_path,actionName] = getconfiglocal();
+	[video_data_dir,video_dir,fullvideoname, videoname,vocabDir,featDir_FV,featDir_LLC,descriptor_path,actionName] = getconfig();
 	st = 692;
 	send = length(videoname);
 	fprintf('Start : %d \n',st);
